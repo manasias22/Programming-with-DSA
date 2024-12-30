@@ -1,0 +1,51 @@
+Here is a summary of the best-case and worst-case time complexities for common sorting algorithms: Bubble Sort, Merge Sort, Quick Sort, Insertion Sort, and Selection Sort.
+
+### Bubble Sort
+- **Best Case:** \(O(n)\)
+  - Occurs when the array is already sorted.
+  - The algorithm will make one pass through the array, seeing that no swaps are needed, and terminate early.
+- **Worst Case:** \(O(n^2)\)
+  - Occurs when the array is sorted in reverse order.
+  - The algorithm needs to make \(n-1\) passes, each pass comparing and swapping elements, leading to a quadratic number of comparisons and swaps.
+
+### Merge Sort
+- **Best Case:** \(O(n \log n)\)
+  - Occurs for all input cases due to the nature of the divide-and-conquer algorithm.
+  - The array is always divided into halves, and merging is performed, maintaining the logarithmic number of splits and linear merging.
+- **Worst Case:** \(O(n \log n)\)
+  - Similar to the best case, due to consistent behavior in splitting and merging irrespective of the initial order of elements.
+
+### Quick Sort
+- **Best Case:** \(O(n \log n)\)
+  - Occurs when the pivot chosen always splits the array into two nearly equal halves.
+  - This results in a balanced recursion tree, leading to logarithmic depth.
+- **Worst Case:** \(O(n^2)\)
+  - Occurs when the pivot chosen is always the smallest or largest element, resulting in highly unbalanced partitions (e.g., sorted or reverse sorted array).
+  - This leads to linear depth recursion with quadratic total comparisons.
+
+### Insertion Sort
+- **Best Case:** \(O(n)\)
+  - Occurs when the array is already sorted.
+  - The algorithm will make one pass through the array, seeing that each element is in its correct place, leading to linear time.
+- **Worst Case:** \(O(n^2)\)
+  - Occurs when the array is sorted in reverse order.
+  - Each new element to be inserted will have to be compared with all the previous elements, leading to quadratic comparisons and shifts.
+
+### Selection Sort
+- **Best Case:** \(O(n^2)\)
+  - Occurs for all input cases due to the nature of the algorithm.
+  - The algorithm always scans the remaining unsorted elements to find the minimum, leading to quadratic time in all cases.
+- **Worst Case:** \(O(n^2)\)
+  - Similar to the best case, due to consistent behavior in scanning and selecting the minimum irrespective of the initial order of elements.
+
+### Summary Table
+
+| Algorithm        | Best Case      | Worst Case    |
+|------------------|----------------|---------------|
+| Bubble Sort      | \(O(n)\)       | \(O(n^2)\)    |
+| Merge Sort       | \(O(n \log n)\)| \(O(n \log n)\) |
+| Quick Sort       | \(O(n \log n)\)| \(O(n^2)\)    |
+| Insertion Sort   | \(O(n)\)       | \(O(n^2)\)    |
+| Selection Sort   | \(O(n^2)\)     | \(O(n^2)\)    |
+
+These complexities highlight the performance of each sorting algorithm under different conditions, providing insight into their efficiency and suitability for various types of input data.
